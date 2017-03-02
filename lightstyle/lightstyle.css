@@ -1,0 +1,413 @@
+/*********************/
+/*** Base elements ***/
+/*********************/
+
+html {
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1000px;
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333;
+}
+
+.main {
+	margin: 20px 0;
+}
+
+header, .header {
+	border-bottom: 1px solid #ccc;
+}
+
+footer, .footer {
+	border-top: 1px solid #ccc;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+hr {
+	margin: 10px 0;
+	border: 0;
+	height: 1px;
+	background-color: #ccc;
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+
+code {
+    padding: 0 5px;
+    color: #555;
+    background-color: #eee;
+    white-space: nowrap;
+}
+
+pre {
+    padding: 5px 10px;
+    color: #555;
+    background-color: #eee;
+    overflow-x: auto;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+label.textlabel {
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+input[readonly] {
+	background: #eee;
+}
+
+textarea:disabled, 
+/*input:not([type]):disabled, */
+input[type="color"]:disabled, 
+input[type="date"]:disabled, 
+input[type="datetime"]:disabled, 
+input[type="datetime-local"]:disabled, 
+input[type="email"]:disabled, 
+input[type="month"]:disabled, 
+input[type="password"]:disabled, 
+input[type="number"]:disabled, 
+input[type="search"]:disabled, 
+input[type="tel"]:disabled, 
+input[type="text"]:disabled, 
+input[type="time"]:disabled, 
+input[type="url"]:disabled, 
+input[type="week"]:disabled {
+    background-color: #eee;
+}
+
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=date],
+input[type=number],
+input[type=search],
+input[type=text],
+input[type=password],
+select {
+	margin: 0;
+	padding: 5px;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+input[type=button],
+input[type=submit],
+button {
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin: 0;
+	background: #eee;
+	background: -moz-linear-gradient(top, #eee, #ddd); /* Firefox 3.6+ */
+	/* Chrome 1-9, Safari 4-5 */
+	background: -webkit-gradient(linear, left top, left bottom, 
+				color-stop(0%,#eee), color-stop(100%,#ddd));
+	/* Chrome 10+, Safari 5.1+ */
+	background: -webkit-linear-gradient(top, #eee, #ddd);
+	background: -o-linear-gradient(top, #eee, #ddd); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eee, #ddd); /* IE10 */
+	background: linear-gradient(top, #eee, #ddd);
+}
+
+input[type=button]:active,
+input[type=submit]:active,
+button:active {
+	background: -moz-linear-gradient(top, #ddd, #eee); /* Firefox 3.6+ */
+	/* Chrome 1-9, Safari 4-5 */
+	background: -webkit-gradient(linear, left top, left bottom, 
+				color-stop(0%,#ddd), color-stop(100%,#eee));
+	/* Chrome 10+, Safari 5.1+ */
+	background: -webkit-linear-gradient(top, #ddd, #eee);
+	background: -o-linear-gradient(top, #ddd, #eee); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ddd, #eee); /* IE10 */
+	background: linear-gradient(top, #ddd, #eee);
+}
+
+input[type=radio],
+input[type=checkbox] {
+	margin: 5px;
+}
+
+textarea {
+	margin: 0;
+	padding: 5px;
+	width: 100%;
+	border: 1px solid #ccc;
+	font-family: Verdana, Tahoma, Arial;
+    font-size: 12px;
+}
+
+form {
+    margin: 0;
+}
+
+form.inline-form input {
+    width: auto;
+}
+
+
+/********************/
+/*** Base classes ***/
+/********************/
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrap {
+    overflow: hidden;
+}
+
+.inline {
+    float: left;
+}
+
+.page-title {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/*** Text ***/
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.help-text {
+    font-size: 12px;
+    color: #ccc;
+}
+
+
+/* Block */
+
+.info {
+    padding: 15px;
+    background-color: #eee;
+}
+
+.note {
+    padding: 15px 15px 15px 10px;
+    background-color: #eee;
+    border-left: 5px solid #ccc;
+}
+
+.message {
+    padding: 14px;
+    border: 1px solid #ccc;
+}
+
+.copyright {
+	font-size: 11px;
+}
+
+
+/*** Menu ***/
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.menu li {
+	float: left;
+	margin-right: 20px;
+	padding: 10px 0;
+	line-height: 30px;
+}
+
+.menu li a {
+	padding: 16px 0;
+}
+
+.menu li.active a {
+	border-bottom: 3px solid #ccc;
+	padding-bottom: 14px;
+}
+
+
+/*** Table ***/
+
+table {
+	margin: 0;
+	padding: 0;
+    width: 100%;
+	font-size: 12px;
+	line-height: 1.4;
+	border: 0;
+	border-spacing: 0;
+}
+
+th, td {
+	margin: 0;
+	padding: 2px 15px 2px 0;
+	border: 0;
+}
+
+th {
+	text-align: left;
+}
+
+
+/*** Table linear ***/
+
+table.linear {
+	border-collapse: collapse;
+}
+
+table.linear th {
+	padding: 5px;
+    border-bottom: 2px solid #ccc;
+}
+
+table.linear td {
+	padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+table.linear tr:last-child td {
+    border-bottom: 0;
+}
+
+
+/*** Table bordered ***/
+
+table.bordered {
+	border-collapse: collapse;
+}
+
+table.bordered th {
+	border: 1px solid #ccc;
+	padding: 5px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+}
+
+table.bordered td {
+	border: 1px solid #ccc;
+	padding:5px;
+	/*vertical-align:top;*/
+}
+
+
+/*** Table adds ***/
+
+table.hovered tbody tr:hover td {
+    background-color: #eee;
+	background-color: rgba(200,200,200,0.2);
+	*background-color: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33C8C8C8,endColorstr=#33C8C8C8);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33C8C8C8,endColorstr=#33C8C8C8);
+	zoom: 1;
+}
+
+table.striped tr:nth-child(even)>td {
+    background-color: #f9f9f9;
+    background-color: rgba(200,200,200,0.1);
+}
+
+
+table td.dimcell {
+	border: none;
+	padding: 0;
+}
+
+table td.dimsizeh {
+	width: 10px;
+}
+
+table td.dimsizev {
+	height: 10px;
+}
+
+
+
+
+
+
+
+
+.vertical {
+	height: 100px;
+	max-width: 30px;
+	
+}
+
+.vertical span {
+	display: block;
+	width: 100px;
+	-webkit-transform: rotate(-90deg);
+	   -moz-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);		/* for IE9 */
+	     -o-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+	margin-left: -30px;
+	*writing-mode: tb-rl;					/* for IE7 */
+	*margin-left: -70px;					/* for IE7 */
+}
