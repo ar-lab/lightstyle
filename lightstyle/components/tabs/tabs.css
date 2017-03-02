@@ -2,17 +2,19 @@
 
 ul.tabs {
 	margin: 0;
-	padding: 0 15px;
-	margin-top: 30px;
+	padding: 0;
 	overflow: hidden;
 	height: 30px;
+	line-height: 30px;
 	list-style: none;
+	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
 ul.tabs li {
 	float: left;
 	margin-left: -1px;
+	padding: 0 15px;
 	border: 1px solid #ccc;
 	background: #eee;
 }
@@ -20,7 +22,6 @@ ul.tabs li {
 ul.tabs li a {
 	display: block;
 	padding: 0 15px;
-	line-height: 30px;
 	color: #666;
 }
 
@@ -39,10 +40,11 @@ ul.tabs li a:hover {
 
 .tabs-content {
 	overflow: hidden;
-	height: 600px;
+	height: 300px;
+	border-bottom: 1px solid #ccc;
 }
 
 .tab-content {
-	height: 600px;
+	height: 300px;
 	overflow: auto;
 }
